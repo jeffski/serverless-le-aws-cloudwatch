@@ -17,10 +17,10 @@ serverless deploy --service my-service --le-region eu --le-token abcd1234 --cw-l
 Depending on your workflow you can also deploy using environment variables:
 
 ```
-export SERVICE
-export LOGENTRIES_REGION
-export LOGENTRIES_TOKEN
-export CLOUDWATCH_LOG
+export SERVICE=my-service
+export LOGENTRIES_REGION=eu
+export LOGENTRIES_TOKEN=abcd1234
+export CLOUDWATCH_LOG=/aws/lambda/my-function
 
 serverless deploy
 ```
