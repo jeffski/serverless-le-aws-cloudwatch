@@ -23,4 +23,4 @@ functions:
     memorySize: 128
     timeout: 30
     events:
-      - cloudwatchLog: ${opt:aws-log, env:AWS_LOG}
+      - cloudwatchLog: ${opt:cw-log, env:CLOUDWATCH_LOG}
