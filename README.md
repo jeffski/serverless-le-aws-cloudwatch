@@ -27,7 +27,7 @@ serverless deploy
 
 #### Options
 
-| Command     | Environment Variable | Description |
+| Argument    | Environment Variable | Description |
 | ---         | ---                  | ---         |
 | `service`   | `SERVICE`            | A unique name for your logging Lambda, will be appended to le-aws-cloudwatch |
 | `le-region` | `LOGENTRIES_REGION`  | The Logentries account region, currently only **eu** |
