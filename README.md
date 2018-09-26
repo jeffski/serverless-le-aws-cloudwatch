@@ -1,7 +1,5 @@
 # Serverless le-aws-cloudwatch
 
----------
-
 **Deploy the LogentriesCommunity [le-aws-cloudwatch](https://github.com/LogentriesCommunity/le-aws-cloudwatch) project
 using the [Serverless Framework](https://serverless.com). Stream AWS Lambda and other CloudWatch logs to Logentries.**
 
