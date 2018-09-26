@@ -1,4 +1,4 @@
-service: ${opt:service, env:SERVICE}-le-aws-cloudwatch
+service: le-aws-cloudwatch
 
 provider:
   name: aws
