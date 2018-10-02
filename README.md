@@ -49,3 +49,13 @@ serverless deploy --le-region eu --le-token abcd1234 --cw-log /aws/lambda/my-fun
 ```
 
 The stage name must be unique for each function and environment.
+
+Note: If the combined service name (le-cw), stage parameter (my-function) and region (ap-southeast-2) exceed 64 
+characters you may receive an error similar to:
+
+```
+An error occurred: IamRoleLambdaExecution - 1 validation error detected: Value 'le-cw-my-very-very-really-really-long-function-name-ap-southeast-2-lambdaRole' at 'roleName' failed to satisfy constraint: Member must have length less than or equal to 64.
+```
+
+If this occurs the ony option is to shorten your stage name. This is the reason we have kept the service name short 
+(le-cw).

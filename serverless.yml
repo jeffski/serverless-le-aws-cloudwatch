@@ -1,4 +1,4 @@
-service: le-aws-cloudwatch
+service: le-cw
 
 provider:
   name: aws
