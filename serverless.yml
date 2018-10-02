@@ -13,6 +13,8 @@ package:
   exclude:
     - .gitignore
     - .idea
+    - LICENSE
+    - README.md
     - le-aws-cloudwatch/doc/**
     - le-aws-cloudwatch/LICENSE
     - le-aws-cloudwatch/README.md
