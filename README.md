@@ -59,3 +59,23 @@ An error occurred: IamRoleLambdaExecution - 1 validation error detected: Value '
 
 If this occurs the ony option is to shorten your stage name. This is the reason we have kept the service name short 
 (le-cw).
+
+
+### Merging the le-aws-cloudwatch Dependency
+
+If the le-aws-cloudwatch dependency changes then those changes can be merged in using a Git 
+[Subtree Merge](https://git-scm.com/book/en/v1/Git-Tools-Subtree-Merging).
+
+##### Step 1 - Add le-aws-cloudwatch as a remote
+
+```
+git remote add -f le-aws-cloudwatch https://github.com/LogentriesCommunity/le-aws-cloudwatch.git
+```
+
+##### Step 2 - Pull in the changes from le-aws-cloudwatch
+
+```
+git subtree pull --prefix=le-aws-cloudwatch/ le-aws-cloudwatch master --squash
+```
+
+Then push the changes or if you have created a fork open a pull request.
