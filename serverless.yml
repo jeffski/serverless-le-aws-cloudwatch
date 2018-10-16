@@ -6,6 +6,7 @@ provider:
   stage: dev
   region: ap-southeast-2
   environment:
+    PYTHONPATH: '/var/task/le-aws-cloudwatch:/var/runtime'
     region: ${opt:le-region, env:LOGENTRIES_REGION}
     token: ${opt:le-token, env:LOGENTRIES_TOKEN}
 
