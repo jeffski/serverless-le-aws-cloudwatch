@@ -28,7 +28,7 @@ Depending on your workflow you can also deploy using environment variables:
 export LOGENTRIES_REGION=eu
 export LOGENTRIES_TOKEN=abcd1234
 export CLOUDWATCH_LOG=/aws/lambda/my-function
-export CICD=ap-southeast-2
+export CICD_REGION=ap-southeast-2
 
 serverless deploy
 ```
