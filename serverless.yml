@@ -25,5 +25,9 @@ functions:
     handler: le-aws-cloudwatch/le_cloudwatch.lambda_handler
     memorySize: 128
     timeout: 30
+    tags:
+      Service: Lambda
+      Project: ${env:PROJECT_NAME}
+      Stack: ${env:CICD_NAMESPACE}
     events:
       - cloudwatchLog: ${opt:cw-log, env:CLOUDWATCH_LOG}
